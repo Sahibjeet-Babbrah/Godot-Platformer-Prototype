@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Box.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/GridBox/GridBox.gd" type="Script" id=2]
+
+[node name="GridBox" index="0" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2( 32, 32 )
+
+[node name="Sprite" parent="." index="1"]
+centered = false
+
+[node name="Tween" type="Tween" parent="." index="2"]
+
